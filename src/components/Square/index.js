@@ -1,13 +1,13 @@
 import React from 'react';
+import StyledSquare from './styles';
 
 function Square(props) {
     return (
-        <button
-            className="square"
+        <StyledSquare
             onClick={props.onClick}
         >
-            {props.value}
-        </button>
+            {props.value || ' '}
+        </StyledSquare>
     );
 }
 

@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
 const StyledBoard = styled.div`
-    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
     width: 50%;
 `;
 

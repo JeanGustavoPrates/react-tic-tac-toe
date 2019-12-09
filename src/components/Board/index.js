@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Square from './../Square/index';
 import StyledBoard from './styles';
+
+import Square from './../Square/index';
+import StatusBar from './../StatusBar/index';
 
 class Board extends Component {
 
@@ -75,7 +77,7 @@ class Board extends Component {
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
                 </div>
-                <div className="status">{status}</div>
+                <StatusBar text={status}></StatusBar>
             </StyledBoard>
         );
     }
